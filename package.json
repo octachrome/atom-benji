@@ -1,0 +1,37 @@
+{
+  "name": "atom-benji",
+  "main": "./lib/atom-benji",
+  "version": "0.0.0",
+  "description": "Linter for Benji scripts",
+  "keywords": [],
+  "repository": "https://github.com/octachrome/atom-benji",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "atom-linter": "^4.6.1",
+    "atom-package-deps": "^4.0.1",
+    "install": "^0.6.0",
+    "loophole": "^1.1.0",
+    "npm": "^3.8.2",
+    "pegjs": "^0.9.0"
+  },
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  },
+  "consumedServices": {
+    "autoreload": {
+      "versions": {
+        "^0.0.1": "consumeAutoreload"
+      }
+    }
+  },
+  "package-deps": [
+    "linter"
+  ]
+}
