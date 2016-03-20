@@ -1,0 +1,37 @@
+> Hi mum.
+|> Hello mum
+|> Hi mummy.
+|> Hello mother.
+< Benji? Oh hello dear!
+|< Hello Benji!
+|< Hello sweetheart.
+|< Hello Kevin.
+    > It's Benji.
+    < Oh, hello Benji dear!
+> How are you doing?
+|> How are things?
+|> How are you feeling?
+< Oh, okay dear. Can't complain!
+|< Well, the goblins have been causing trouble in the garden again!
+    > Oh no! I should bring Torpedo along to scare them off.
+        < Good idea sweetheart!
+        |< Yes!
+        |< Are goblins scared of cats?
+            > I have no idea.
+    |> Oh! Those tykes!
+    |> You should try to catch one! It may have useful information.
+|< Ooh, I'm feeling a bit confused today
+|< A little bit sleepy, my dear.
+    > Ok, I won't keep you up too long then!
+|< Okay, but I think Gladys might be trying to poison me!
+    > Oh, she doesn't seem the type, mum!
+    |> You must stay vigilant!
+|< I have a funny feeling we're being watched...
+    :sometimes 10%
+        :wait 3 sec
+        > Oh mum! There's no-one watching us!
+        |> You know… You may be right?
+|< My head hurts!
+    > Oh! Let me get you some medicine.
+|< I'm feeling vaguely disappointed.
+    > Oh dear. I'm sorry to hear that.
