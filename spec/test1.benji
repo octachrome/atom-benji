@@ -27,10 +27,11 @@
     > Oh, she doesn't seem the type, mum!
     |> You must stay vigilant!
 |< I have a funny feeling we're being watched...
-    :repeat for 3 sec
-        :play none
-    > Oh mum! There's no-one watching us!
-    |> You know… You may be right?
+    :maybe 10%
+        :repeat for 3 sec
+            :play none
+        > Oh mum! There's no-one watching us!
+        |> You know… You may be right?
 |< My head hurts!
     > Oh! Let me get you some medicine.
 |< I'm feeling vaguely disappointed.

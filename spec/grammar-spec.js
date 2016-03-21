@@ -208,32 +208,44 @@ function expectedJson() {
               },
               {
                 "type": "Cmd",
-                "cmd": "repeat_for",
+                "cmd": "maybe",
                 "args": [
-                  false,
-                  "3",
-                  "sec"
+                  "10"
                 ],
                 "child": {
-                  "type": "Cmd",
-                  "cmd": "play",
-                  "args": [
-                    "none"
+                  "type": "Seq",
+                  "children": [
+                    {
+                      "type": "Cmd",
+                      "cmd": "repeat_for",
+                      "args": [
+                        false,
+                        "3",
+                        "sec"
+                      ],
+                      "child": {
+                        "type": "Cmd",
+                        "cmd": "play",
+                        "args": [
+                          "none"
+                        ]
+                      }
+                    },
+                    {
+                      "type": "Choice",
+                      "children": [
+                        {
+                          "type": "Dialog",
+                          "dialog": "Oh mum! There's no-one watching us!"
+                        },
+                        {
+                          "type": "Dialog",
+                          "dialog": "You know… You may be right?"
+                        }
+                      ]
+                    }
                   ]
                 }
-              },
-              {
-                "type": "Choice",
-                "children": [
-                  {
-                    "type": "Dialog",
-                    "dialog": "Oh mum! There's no-one watching us!"
-                  },
-                  {
-                    "type": "Dialog",
-                    "dialog": "You know… You may be right?"
-                  }
-                ]
               }
             ]
           },
