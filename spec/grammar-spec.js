@@ -207,28 +207,31 @@ function expectedJson() {
                 "dialog": "I have a funny feeling we're being watched..."
               },
               {
-                "type": "Seq",
+                "type": "Cmd",
+                "cmd": "repeat_for",
+                "args": [
+                  false,
+                  "3",
+                  "sec"
+                ],
+                "child": {
+                  "type": "Cmd",
+                  "cmd": "play",
+                  "args": [
+                    "none"
+                  ]
+                }
+              },
+              {
+                "type": "Choice",
                 "children": [
                   {
-                    "type": "Cmd",
-                    "cmd": "sometimes"
+                    "type": "Dialog",
+                    "dialog": "Oh mum! There's no-one watching us!"
                   },
                   {
-                    "type": "Cmd",
-                    "cmd": "wait"
-                  },
-                  {
-                    "type": "Choice",
-                    "children": [
-                      {
-                        "type": "Dialog",
-                        "dialog": "Oh mum! There's no-one watching us!"
-                      },
-                      {
-                        "type": "Dialog",
-                        "dialog": "You know… You may be right?"
-                      }
-                    ]
+                    "type": "Dialog",
+                    "dialog": "You know… You may be right?"
                   }
                 ]
               }
