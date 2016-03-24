@@ -1,22 +1,22 @@
 # See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
-# 'context-menu':
-#   'atom-text-editor': [
-#     {
-#       'label': 'Toggle atom-benji'
-#       'command': 'atom-benji:toggle'
-#     }
-#   ]
-# 'menu': [
-#   {
-#     'label': 'Packages'
-#     'submenu': [
-#       'label': 'atom-benji'
-#       'submenu': [
-#         {
-#           'label': 'Toggle'
-#           'command': 'atom-benji:toggle'
-#         }
-#       ]
-#     ]
-#   }
-# ]
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Preview Benji script'
+      'command': 'atom-benji:preview'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Benji'
+      'submenu': [
+        {
+          'label': 'Preview Benji script'
+          'command': 'atom-benji:preview'
+        }
+      ]
+    ]
+  }
+]
