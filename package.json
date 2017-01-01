@@ -1,7 +1,7 @@
 {
   "name": "atom-benji",
   "main": "./lib/atom-benji",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Linter for Benji scripts",
   "keywords": [],
   "repository": "https://github.com/octachrome/atom-benji",
